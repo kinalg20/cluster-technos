@@ -74,6 +74,13 @@
 .elementor-4 .elementor-element.elementor-element-2356a4b .elementskit-infobox .box-body > p{
     color: #FFFFFF;
 } */
+.home-page-img {
+    width: 75%;
+}
+.watch-container .row {
+    display: flex;
+    justify-content: space-evenly;
+}
 .watch-card {
     box-shadow: rgb(62, 129, 230) 0px 6px 16px;
 }

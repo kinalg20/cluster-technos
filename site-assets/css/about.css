@@ -1,5 +1,8 @@
 @import "common.css";
 /* Primary Button */
+.fa-brands {
+    font-size: 40px;
+}
 .card-div{
     border-radius: 10px;
 }
@@ -40,7 +43,7 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px 2px rgb(0 0 0 / 20%);
   }
   
   .flip-card:hover .flip-card-inner {
@@ -63,9 +66,13 @@
       width: 300px;
       height: 300px;
   }
-  
+  .flip-card-back .d-flex {
+    position: relative;
+    top: 40px;
+    justify-content: center;
+  }
   .flip-card-back {
-    background-color: #2980b9;
+    background-color: #ffffff;
     color: white;
     transform: rotateY(180deg);
   }

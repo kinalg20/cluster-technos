@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="site-assets/css/index.css">
   <link rel="stylesheet" href="site-assets/css/owl.carousel.css">
   <link rel="stylesheet" href="site-assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="path/to/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Cluster Technos</title>
 </head>
@@ -39,11 +42,18 @@
           <a class="nav-link" href="about.html">About Us</a>
 
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Solutions</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropdownButton" href="solution.html">Solutions</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownButton">
+            <a class="dropdown-item" href="./industries/automative.html"><i class="fa-solid fa-headset"></i>BPO</a><hr>
+            <a class="dropdown-item" href="./industries/real-estate.html">KPO</a><hr>
+            <a class="dropdown-item" href="./industries/retail-commerce.html"><i class="fa-solid fa-earth-asia"></i>ITeS</a><hr>
+            <a class="dropdown-item" href="./industries/health-care.html"><i class="fa-solid fa-code"></i>Development</a><hr>
+            <a class="dropdown-item" href="./industries/manufacturing.html"><i class="fa-solid fa-circle-dollar"></i>Accounting</a><hr>
+          </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link industry-class dropdown-toggle" id="dropdownMenuButton" href="industry.html">Industry</a>
+          <a class="nav-link dropdown-toggle" id="dropdownMenuButton" href="industry.html">Industry</a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="./industries/automative.html">AUTOMATIVE</a><hr>
             <a class="dropdown-item" href="./industries/real-estate.html">REAL ESTATE</a><hr>
@@ -253,43 +263,69 @@
       </div>
     </div> -->
 
-    <div class="container">
+    <div class="container-fluid watch-container">
       <div class="row">
-        <div class="col-4">
-          <div class="card p-5 watch-card">
+        <div>
+          <div class="card p-3 watch-card">
             <div class="row">
               <i class="fa-solid fa-lightbulb-exclamation-on"></i>
             </div>
             <div class="row m-0 p-0" style="justify-content: center;">
               <table>
-                <tr><td style="text-align: center;"><canvas id="canvas_tt6238b9174ec9c" width="175" height="175"></canvas></td></tr>
-                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/current_time/united_kingdom_london_clock.php" style="text-decoration: none" class="clock24" id="tz24-1647884567-cc16143-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IjAwOTlGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzOGI5MTc0ZWM5YyJ9" title="time now London" target="_blank" rel="nofollow">United Kingdom</a></td></tr>
+                <tr><td style="text-align: center;"><canvas id="canvas_tt623ad7e2c3eb6" width="175" height="175"></canvas></td></tr>
+                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/current_time/india_new_delhi_clock.php" style="text-decoration: none" class="clock24" id="tz24-1648023522-cc13072-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IkZGRkZGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzYWQ3ZTJjM2ViNiJ9" title="time zone New Delhi" target="_blank" rel="nofollow">India</a></td></tr>
             </table>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card p-5 watch-card">
+        <div>
+          <div class="card p-3 watch-card">
             <div class="row ">
               <i class="elementkit-infobox-icon icon icon-idea_generate"></i>
             </div>
             <div class="row m-0 p-0" style="justify-content: center;">
               <table>
-                <tr><td style="text-align: center;"><canvas id="canvas_tt6238bbf8244ec" width="175" height="175"></canvas></td></tr>
-                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/California/time" style="text-decoration: none" class="clock24" id="tz24-1647885304-su32-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IjAwOTlGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzOGJiZjgyNDRlYyJ9" title="time now California" target="_blank" rel="nofollow">United States</a></td></tr>
+                <tr><td style="text-align: center;"><canvas id="canvas_tt623ad82baf6ec" width="175" height="175"></canvas></td></tr>
+                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/current_time/united_kingdom_london_clock.php" style="text-decoration: none" class="clock24" id="tz24-1648023595-cc16143-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IkZGRkZGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzYWQ4MmJhZjZlYyJ9" title="clock London" target="_blank" rel="nofollow">UK</a></td></tr>
             </table>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card p-5 watch-card">
+        <div>
+          <div class="card p-3 watch-card">
             <div class="row">
               <!-- <img src="/site-assets/images/Group 70.png" alt=""> -->
             </div>
             <div class="row m-0 p-0" style="justify-content: center;">
               <table>
-                <tr><td style="text-align: center;"><canvas id="canvas_tt6238bcbdce079" width="175" height="175"></canvas></td></tr>
-                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/current_time/india_new_delhi_clock.php" style="text-decoration: none" class="clock24" id="tz24-1647885501-cc13072-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IjAwOTlGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzOGJjYmRjZTA3OSJ9" title="New Delhi - Clock" target="_blank" rel="nofollow">India</a></td></tr>
+                <tr><td style="text-align: center;"><canvas id="canvas_tt623ad868f296f" width="175" height="175"></canvas></td></tr>
+                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/California/time" style="text-decoration: none" class="clock24" id="tz24-1648023656-su32-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IkZGRkZGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzYWQ4NjhmMjk2ZiJ9" title="Clock - California" target="_blank" rel="nofollow">USA</a></td></tr>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card p-3 watch-card">
+            <div class="row">
+              <!-- <img src="/site-assets/images/Group 70.png" alt=""> -->
+            </div>
+            <div class="row m-0 p-0" style="justify-content: center;">
+              <table>
+                <tr><td style="text-align: center;"><canvas id="canvas_tt623ade50de96a" width="175" height="175"></canvas></td></tr>
+                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/current_time/united_arab_emirates_abu_dhabi_clock.php" style="text-decoration: none" class="clock24" id="tz24-1648025168-cc15950-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IkZGRkZGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzYWRlNTBkZTk2YSJ9" title="World Time :: Abu Dhabi" target="_blank" rel="nofollow">UAE</a></td></tr>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card p-3 watch-card">
+            <div class="row">
+              <!-- <img src="/site-assets/images/Group 70.png" alt=""> -->
+            </div>
+            <div class="row m-0 p-0" style="justify-content: center;">
+              <table>
+                <tr><td style="text-align: center;"><canvas id="canvas_tt623adeabb3c5d" width="175" height="175"></canvas></td></tr>
+                <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/time-zone/acst" style="text-decoration: none" class="clock24" id="tz24-1648025259-tzacst-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IkZGRkZGRiIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjIzYWRlYWJiM2M1ZCJ9" title="time at ACST" target="_blank" rel="nofollow">AUS</a></td></tr>
             </table>
             </div>
           </div>
@@ -351,7 +387,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <img src="site-assets/images/Capture.PNG" class="img-fluid" alt="">
+          <img src="site-assets/images/Group 31.png" class="img-fluid home-page-img" alt="">
         </div>
       </div>
     </div>
