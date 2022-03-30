@@ -74,10 +74,44 @@
 .elementor-4 .elementor-element.elementor-element-2356a4b .elementskit-infobox .box-body > p{
     color: #FFFFFF;
 } */
-.drpdown {
-    width: 325px;
-    height: 325px;
+.toggle-button{
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
+.card-header {
+    padding: 8px;
+}
+.card-div{
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+.toggle-button:hover {
+    text-decoration: none!important;
+    color: rgb(0, 0, 0)!important;
+}
+.toggle-button:focus{
+    text-decoration: none!important;
+    box-shadow: none!important;
+    color: rgb(0, 0, 0)!important;
+}
+.count-container .row .col-3 {
+    padding: 60px;
+}
+.count-container .row .col-3 h1 {
+    line-height: 70px!important;
+    font-size: 45px!important;
+}
+.drpdown {
+    width: 350px;
+    height: 230px;
+}
+/* .drpdown .row {
+    height: 50%;
+    align-items: center;
+} */
 .home-page-img {
     width: 75%;
 }
