@@ -102,7 +102,7 @@
 }
 .count-container .row .col-3 h1 {
     line-height: 70px!important;
-    font-size: 45px!important;
+    font-size: 35px!important;
 }
 .drpdown {
     width: 350px;
@@ -654,3 +654,28 @@ footer .row .col-12 ul > li > a:hover {
         padding: 20px;
     }
 }
+
+  .counter {
+    width: 100px;
+    font: 800 40px system-ui;
+    overflow: hidden;
+  }
+  .numbers {
+    width: auto;
+    display: flex;
+    animation: countNumber 4s infinite alternate;
+    animation-timing-function: steps(10);
+  }
+  .numbers div {
+    text-align: center;
+    flex: 0 0 100px;
+  }
+  
+  @keyframes countNumber {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -1000px;
+    }
+  }
