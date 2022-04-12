@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="site-assets/css/index.css">
   <link rel="stylesheet" href="site-assets/css/owl.carousel.css">
   <link rel="stylesheet" href="site-assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="path/to/fontawesome.min.css">
+  <!-- <link rel="stylesheet" href="path/to/fontawesome.min.css"> -->
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
@@ -47,27 +47,13 @@
 
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="dropdownButton" href="solution.html">Solutions</a>
-          <div class="dropdown-menu drpdown" aria-labelledby="dropdownButton">
-            <div class="row">
-              <div class="col-4">
-                <a class="dropdown-item" href="#"><i class="fa-solid fa-headset"></i>BPO</a>
-              </div>
-              <div class="col-4">
-                <a class="dropdown-item" href="#"><i class="fa-solid fa-display-code"></i>KPO</a>
-              </div>
-              <div class="col-4">
-                <a class="dropdown-item" href="#"><i class="fa-solid fa-earth-asia"></i>ITeS</a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>Development</a>
-              </div>
-              <div class="col-6">
-                <a class="dropdown-item" href="#"><i class="fa-solid fa-circle-dollar"></i>Accounting</a>
-              </div>
-            </div>
+          <a class="nav-link dropdown-toggle" id="dropdownButton" href="#">Solutions</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./solutions/kpo.html">KPO</a>
+            <hr>
+            <a class="dropdown-item" href="./solutions/bpo.html">BPO</a>
+            <hr>
+            <a class="dropdown-item" href="./solutions/ITeS.html">ITeS</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -120,24 +106,6 @@
       </div>
     </div>
   </nav>
-  <div id="about-section" style="display: none;"><i class="fa-solid fa-triangle"></i>
-    <div class="row h-50 modal-row">
-      <div class="col-6">
-        <div class="card">section 1</div>
-      </div>
-      <div class="col-6">
-        <div class="card">section 1</div>
-      </div>
-    </div>
-    <div class="row h-50 " style="margin: 10px;">
-      <div class="col-6">
-        <div class="card">section 1</div>
-      </div>
-      <div class="col-6">
-        <div class="card">section 1</div>
-      </div>
-    </div>
-  </div>
   <!-- Modal Section Start -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -403,26 +371,38 @@
       <div class="row">
         <div class="col-3">
           <h1 class="count">Country's</h1>
-          <h1 id="value">4+</h1>
+          <div class="counter-class">
+            <h1 id="value">4</h1>
+            <h1>+</h1>
+          </div>
         </div>
         <div class="col-3">
           <h1 class="count">Client</h1>
-          <h1 id="value">5+</h1>
+          <div class="counter-class">
+            <h1 id="value1">5</h1>
+            <h1>+</h1>
+          </div>
         </div>
         <div class="col-3">
           <h1 class="count">Campaign</h1>
-          <h1 id="value">4+</h1>
+          <div class="counter-class">
+            <h1 id="value2">4</h1>
+            <h1>+</h1>
+          </div>
         </div>
         <div class="col-3">
           <h1 class="count">Resources</h1>
-          <h1 id="value">100+</h1>
+          <div class="counter-class">
+            <h1 id="value3">100</h1>
+            <h1>+</h1>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
 
-  <div class="counter">
+  <!-- <div class="counter">
     <div class="numbers">
       <div>0</div>
       <div>1</div>
@@ -436,7 +416,7 @@
       <div>9</div>
       <div>10</div>
     </div>
-  </div>
+  </div> -->
 
   <!-- One API. Cleaner code. -->
   <section class="jumbotron jumbotron-fluid my-0 background_gradient">
@@ -779,6 +759,71 @@
   <script src="site-assets/js/owl.carousel.min.js"></script>
   <script src="site-assets/js/index.js"></script>
   <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+  <script>
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    const obj = document.getElementById("value");
+    animateValue(obj, 0,4, 2000);
+
+    function animateValue1(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    const obj1 = document.getElementById("value1");
+    animateValue1(obj1, 0,5, 2000);
+
+    function animateValue2(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    const obj2 = document.getElementById("value2");
+    animateValue2(obj2, 0,4, 2000);
+
+    function animateValue3(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    const obj3 = document.getElementById("value3");
+    animateValue3(obj3, 0,100, 2000);
+  </script>
 </body>
 
 </html>

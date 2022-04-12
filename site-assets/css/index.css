@@ -74,6 +74,10 @@
 .elementor-4 .elementor-element.elementor-element-2356a4b .elementskit-infobox .box-body > p{
     color: #FFFFFF;
 } */
+.counter-class {
+    display: flex;
+    justify-content: center;
+}
 .toggle-button{
     width: 100%;
     font-size: 20px;
@@ -104,14 +108,6 @@
     line-height: 70px!important;
     font-size: 35px!important;
 }
-.drpdown {
-    width: 350px;
-    height: 230px;
-}
-/* .drpdown .row {
-    height: 50%;
-    align-items: center;
-} */
 .home-page-img {
     width: 75%;
 }
@@ -123,7 +119,7 @@
     box-shadow: rgb(62, 129, 230) 0px 6px 16px;
 }
 .cards-section {
-    width: 17rem;
+    width: 15rem;
     box-shadow: rgb(62, 129, 230) 0px 6px 16px;
 }
 hr {
